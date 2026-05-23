@@ -1,0 +1,17 @@
+[project]
+name = "quant-derivatives-research"
+version = "0.1.0"
+description = "Research-grade options analytics, market-making simulation, and dealer hedging pressure proxies."
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

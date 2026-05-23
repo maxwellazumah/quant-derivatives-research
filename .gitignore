@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local secrets and broker/API material must never enter this public repo.
+.env
+.env.*
+*token*
+*secret*
+*private_key*
+*.pem
+*.key
+
+# Generated outputs and large/raw data.
+artifacts/
+data/raw/
+data/cache/
+reports/generated/
+*.log
+
